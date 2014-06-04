@@ -84,7 +84,10 @@ void set_leds(unsigned char leds)
 void fill_buff(struct pix_buff *buff, unsigned char val)
 {
     unsigned int i;
-    unsigned int max = (buff->height>>3) * buff->width;
+    unsigned int max;
+
+    max= (buff->height>>3) * buff->width;
+
     for(i = 0; i < max; i++)
         buff->pixels[i] = val;
 }
@@ -95,11 +98,11 @@ void fill_buff_area(struct coord loc,
                     unsigned char fill,
                     struct pix_buff *dest_buff)
 {
-    unsigned int i, j, total_el = (dest_buff->height >> 3) * dest_buff->width;
-
+    unsigned int i, j, total_el;
     unsigned char y_mod, y_pix, y_mod_end;
     unsigned int base_y, base_y_end;
 
+    total_el  = (dest_buff->height >> 3) * dest_buff->width;
     //should do other checks?
     if (loc.x > dest_buff->width || loc.y > dest_buff->height)
         return;

@@ -22,6 +22,9 @@ struct Conference_Event
 #define NUM_EVENTS_D2 17
 struct Conference_Event conf_events_d1[NUM_EVENTS_D1],
                         conf_events_d2[NUM_EVENTS_D2];
+
+void init_d1(void);
+void init_d2(void);
 void initConferenceEvents()
 {
     init_d1();
@@ -103,7 +106,7 @@ void init_d1(void)
     b_strcpy(conf_events_d1[i++].ballroom_title, "Ben Tomhave");
 
     //Nick Popovich
-    //I Found a Thing and You Can Too: ISP’s Unauthenticated SOAP Service = Find (almost) All the Things!	CTF Prep
+    //I Found a Thing and You Can Too: ISP?s Unauthenticated SOAP Service = Find (almost) All the Things!	CTF Prep
 //    conf_events_d1[i].start_time = 10000;
 //    conf_events_d1[i].end_time = 15000;
 //    b_strcpy(conf_events_d1[i].other_title, "CTF Prep");
@@ -142,7 +145,7 @@ void init_d1(void)
 
 
     //3:00	3:50	Inga Goddijn
-        //Cyber Insurance – Worth the Effort or Total Ripoff?
+        //Cyber Insurance ? Worth the Effort or Total Ripoff?
     conf_events_d1[i].start_time = 30000;
     conf_events_d1[i].end_time = 35000;
     b_strcpy(conf_events_d1[i].other_title, "CTF Prep");
@@ -166,7 +169,7 @@ void init_d1(void)
 
 
     //4:00	4:50	Seth Hanford
-       //CVSS v3 – This One Goes to 11
+       //CVSS v3 ? This One Goes to 11
     conf_events_d1[i].start_time = 40000;
     conf_events_d1[i].end_time = 45000;
     b_strcpy(conf_events_d1[i].other_title, "\0");
@@ -372,18 +375,18 @@ Into The Worm Hole: Metasploit For Web PenTesting
 12:00	1:00	Lunch
 1:00	1:50	Ben Tomhave
 How to Achieve Success with Cyber Risk Assessment and Analysis	Nick Popovich
-I Found a Thing and You Can Too: ISP’s Unauthenticated SOAP Service = Find (almost) All the Things!	CTF Prep
+I Found a Thing and You Can Too: ISP?s Unauthenticated SOAP Service = Find (almost) All the Things!	CTF Prep
 1:50	2:00	Break 	 	CTF Prep
 2:00	2:50	Jayson E. Street
 The Hacker In The Fun House Mirror (A Talk On Skewed Perspectives	mubix
 Attacker Ghost Stories: Mostly Free Defenses That Gives Attackers Nightmares	CTF Prep
 2:50	3:00	Break 	 	CTF Prep
 3:00	3:50	Inga Goddijn
-Cyber Insurance – Worth the Effort or Total Ripoff?	Jack Mannino & Abdullah Munawar
+Cyber Insurance ? Worth the Effort or Total Ripoff?	Jack Mannino & Abdullah Munawar
 How To Find Mobile Internet Love	CTF Prep
 3:50	4:00	Break 	 	CTF Prep
 4:00	4:50	Seth Hanford
-CVSS v3 – This One Goes to 11
+CVSS v3 ? This One Goes to 11
 4:50	5:00	Break
 5:00	5:50	Schuyler Towne
 How To Make A Lock

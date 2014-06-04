@@ -75,7 +75,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>1.21</languageToolchainVersion>
+        <languageToolchainVersion>1.31</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <compileType>
@@ -237,7 +237,7 @@
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="false"/>
         <property key="enable-unroll-loops" value="false"/>
-        <property key="exclude-floating-point" value="false"/>
+        <property key="exclude-floating-point" value="true"/>
         <property key="extra-include-directories" value="../src"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="isolate-each-function" value="false"/>
@@ -251,8 +251,9 @@
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
         <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
         <property key="use-indirect-calls" value="false"/>
-        <appendMe value="-G0"/>
+        <appendMe value="-G0 -Wall"/>
       </C32>
       <C32-AS>
         <property key="assembler-symbols" value=""/>
@@ -289,8 +290,8 @@
         <property key="optimization-level" value="-O1"/>
         <property key="preprocessor-macros" value=""/>
         <property key="remove-unused-sections" value="false"/>
-        <property key="report-memory-usage" value="false"/>
-        <property key="stack-size" value="1024"/>
+        <property key="report-memory-usage" value="true"/>
+        <property key="stack-size" value="2048"/>
         <property key="symbol-stripping" value=""/>
         <property key="trace-symbols" value=""/>
         <property key="warn-section-align" value="false"/>
@@ -323,6 +324,7 @@
       <C32Global>
         <property key="legacy-libc" value="false"/>
         <property key="save-temps" value="false"/>
+        <property key="wpo-lto" value="false"/>
       </C32Global>
       <PICkit3PlatformTool>
         <property key="ADC 1" value="true"/>
@@ -379,6 +381,7 @@
         <property key="programoptions.preserveprogramrange.end" value="0x1d01ffff"/>
         <property key="programoptions.preserveprogramrange.start" value="0x1d000000"/>
         <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VPPFirst"/>
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="false"/>
         <property key="voltagevalue" value="3.25"/>
